@@ -18,6 +18,29 @@ Gerenciamento de jogos favoritos e avaliacoes:
 - Vitest
 - V8 Coverage
 
+## Como instalar e rodar
+
+Requisito: Node.js 18 ou superior.
+
+```bash
+git clone https://github.com/Eduardo-Macedo07/gamevault-tdd.git
+cd gamevault-tdd
+npm install
+cp .env.example .env     # opcional: ajusta a PORT (padrão 3000)
+npm start                # sobe a aplicação em http://localhost:3000
+```
+
+Para desenvolvimento com recarga automática: `npm run dev`.
+Para conferir que a aplicação está de pé, abra `http://localhost:3000/health`
+(resposta esperada: `{"status":"ok"}`).
+
+## Como rodar os testes
+
+```bash
+npm test                 # roda toda a suíte (Vitest)
+npm run test:coverage    # testes com cobertura (mínimo de 80% na camada Service)
+```
+
 ## Scripts
 
 ```bash
@@ -25,6 +48,17 @@ npm test
 npm run test:run
 npm run test:coverage
 ```
+
+## Gestão de configuração
+
+- Plano de GCS: [docs/gcs/Plano_Gerenciamento_Configuracao_GameVault.pdf](docs/gcs/Plano_Gerenciamento_Configuracao_GameVault.pdf)
+  (índice em [docs/README.md](docs/README.md)).
+- A `main` é protegida: só recebe alterações por Pull Request, com 1 aprovação do par de
+  revisão (`@Felipe-Schwabe`), histórico linear e sem exceções.
+- Merge somente por **squash**; o título do PR (Conventional Commits) vira a mensagem do commit.
+- Ambientes (GitHub Environments): `staging` e `production`; o `production` exige a
+  aprovação do dono do repositório.
+- Nenhum segredo no código: use `.env` (ignorado pelo Git); veja `.env.example`.
 
 ## Estrutura Principal
 
