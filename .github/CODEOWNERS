@@ -1,0 +1,12 @@
+# Revisores automáticos por área (PGC 2 e 5.2).
+# Vale a ÚLTIMA linha que casar com o arquivo.
+#
+# @Felipe-Schwabe é o par de revisão (revisor permanente): o GitHub não deixa o
+# autor aprovar o próprio PR. @Eduardo-Macedo07 é o dono do repositório e também
+# é chamado em mudanças de maior risco (pipelines, dependências, documentos de GCS).
+
+*                    @Felipe-Schwabe
+/.github/            @Eduardo-Macedo07 @Felipe-Schwabe
+/docs/gcs/           @Eduardo-Macedo07 @Felipe-Schwabe
+**/package.json      @Eduardo-Macedo07 @Felipe-Schwabe
+**/package-lock.json @Eduardo-Macedo07 @Felipe-Schwabe
