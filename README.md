@@ -68,17 +68,17 @@ src/modules/game/game.model.js
 src/modules/game/__tests__/game.service.test.js
 vitest.config.js
 test/setup.js
-RELATORIO.md
+docs/RELATORIO.md
 ```
 
 ## Requisitos Da Nota 7
 
 - 15 ou mais testes unitarios na camada Service: entregue com 18 testes.
-- TDD Red-Green-Refactor: documentado em `RELATORIO.md`.
+- TDD Red-Green-Refactor: documentado em `docs/RELATORIO.md`.
 - Mocks com `vi.fn()`, `vi.mock()` e `vi.spyOn()`: usados nos testes do service.
 - Vitest com cobertura: configurado em `vitest.config.js`.
 - Cobertura minima de 80% no Service: thresholds configurados.
-- Relatorio e conteudo para apresentacao: disponiveis em `RELATORIO.md`.
+- Relatorio e conteudo para apresentacao: disponiveis em `docs/RELATORIO.md`.
 
 ## Complemento N3 - Nota 6
 
@@ -92,7 +92,7 @@ src/modules/recommendation/recommendation.service.js
 src/modules/recommendation/recommendation.controller.js
 src/modules/recommendation/recommendation.routes.js
 src/modules/recommendation/__tests__/
-RELATORIO_N3.md
+docs/RELATORIO_N3.md
 ```
 
 Foram adicionados testes unitarios e testes de integracao HTTP com Supertest para a nova funcionalidade.
