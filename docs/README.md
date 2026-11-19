@@ -13,5 +13,5 @@ Pull Request revisado pelo par de revisão.
 
 | Documento | Descrição |
 |---|---|
-| [../RELATORIO.md](../RELATORIO.md) | Processo de TDD da camada Service (Nota 7) |
-| [../RELATORIO_N3.md](../RELATORIO_N3.md) | Complemento N3: módulo de recomendações |
+| [RELATORIO.md](RELATORIO.md) | Processo de TDD da camada Service (Nota 7) |
+| [RELATORIO_N3.md](RELATORIO_N3.md) | Complemento N3: módulo de recomendações |
